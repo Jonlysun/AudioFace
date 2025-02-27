@@ -3,8 +3,6 @@ This is official code and dataset release for paper 'Audio-Driven Identity Manip
 
 Our main insight is that a person's voice carries distinct identity markers, such as age and gender, which provide an essential supplement for identity-aware face inpainting. By extracting identity information from audio as guidance, our method can naturally support tasks of identity preservation and identity swapping in face inpainting.
 
-[Note] Resouce in GoogleDrive is waiting! We will update it as soon as possible.
-
 ## Environment
 ```
 conda create -n AudioFace python=3.8
