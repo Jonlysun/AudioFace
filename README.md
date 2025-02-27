@@ -1,4 +1,4 @@
-# AudioFace
+# Audio-Driven Identity Manipulation for Face Inpainting
 This is official code and dataset release for paper 'Audio-Driven Identity Manipulation for Face Inpainting' published in ACM MM 2024. [Paper](https://dl.acm.org/doi/10.1145/3664647.3680975)
 
 Our main insight is that a person's voice carries distinct identity markers, such as age and gender, which provide an essential supplement for identity-aware face inpainting. By extracting identity information from audio as guidance, our method can naturally support tasks of identity preservation and identity swapping in face inpainting.
@@ -12,17 +12,17 @@ conda activate AudioFace
 pip install -r requirements.txt
 ```
 
-Two pretrained models are necessary for extracting voice embedding and calculating face identity loss. Please download them from [BaiduDisk](https://pan.baidu.com/s/18vn8iVWbe3NDTV9li2rW3w) (code: 2c44) or [GoogleDrive](), and put them in main folder.
+Two pretrained models are necessary for extracting voice embedding and calculating face identity loss. Please download them from [BaiduDisk](https://pan.baidu.com/s/18vn8iVWbe3NDTV9li2rW3w) (code: 2c44) or [GoogleDrive](https://drive.google.com/drive/folders/1WAWdhpDrMkt9rHdKEOVCd4DHEc9eWvBL?usp=drive_link), and put them in main folder.
 
 ## Datasets
 We post-process 3 public datasets *faceforensics*, *HDTF* and *VoxCelebID* for training and evaluation. 
 
-Download them from [BaiduDisk](https://pan.baidu.com/s/1XNDVnHACcHFxhOu4MgLcEA) (code：ws2f) or [Google Drive](https://drive.google.com/drive/folders/10898808888888888888888888888888?usp=sharing), and extract them to `./Datasets/`.
+Download them from [BaiduDisk](https://pan.baidu.com/s/1XNDVnHACcHFxhOu4MgLcEA) (code：ws2f) or [Google Drive](https://drive.google.com/drive/folders/1lJgW63nMiHluhO3FFFU0VztrnC61iP36?usp=drive_link), and extract them to `./Datasets/`.
 
 We also provide some functions in `./audio_script` that help you to create your own audio dataset.
 
 ## Checkpoints
-You can download our pretrained models from [BaiduDisk](https://pan.baidu.com/s/1GvraMZONbtJAS1dFA-tIXA) (code: q8xa) or [GoogleDrive](), and put them in `./checkpoints/`.
+You can download our pretrained models from [BaiduDisk](https://pan.baidu.com/s/1GvraMZONbtJAS1dFA-tIXA) (code: q8xa) or [GoogleDrive](https://drive.google.com/drive/folders/1_P8nUfscgrj3717Vz5-wiDWQrRsP-ZXy?usp=drive_link), and put them in `./checkpoints/`.
 
 
 ## Train and Evaluation
@@ -39,7 +39,7 @@ For training, please run:
 python train.py
 ```
 
-We also provide 'demo.py' for fast evaluation, please download the test data from [BaiduDisk](https://pan.baidu.com/s/1_x9_kYzqbtO85uQBTEO4iQ) (code: hw5s) or [GoogleDrive](). Then, please run:
+We also provide 'demo.py' for fast evaluation, please download the test data from [BaiduDisk](https://pan.baidu.com/s/1_x9_kYzqbtO85uQBTEO4iQ) (code: hw5s) or [GoogleDrive](https://drive.google.com/drive/folders/1Xb_r4qjj4-NHfra_KzhEdGwD0twV_v-A?usp=drive_link). Then, please run:
 ```
 python demo.py
 ```
